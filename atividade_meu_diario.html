@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Diário de Viagem - Floripa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://googleapis.com" />
+<style>
+    .icone:hover { transform: scale(1.2); display: inline-block; transition: 0.3s; color: gold; }
+</style>
+
+</head>
+
+<body>
+<section>
+
+    <input type="text" id="campo_nome" placeholder="Seu nome..." oninput="mostrarNome()">
+    <p id="mensagem"></p>
+
+
+</section>
+    <header>
+        <h1>Minha Viagem para Florianópolis</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre a Viagem</a></li>
+                <li><a href="#galeria">Galeria de Fotos</a></li>
+                <li><a href="#dicas">Dicas Importantes</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <button onclick="mudarFundo()">Mudar Tema 🌓</button>
+        <section id="sobre">
+            <h2>A Ilha da Magia</h2>
+            <p>eu fui pra Florianópolis final do ano . Visitei duas praias que eu nunca tinha ido.</p>
+        </section>
+        <section id="galeria">
+            <img src="foto1.jpeg" alt="Praia 1"width="300">
+            <img src="foto2.jpeg" alt="Praia 2" width="300">
+            <img src="foto4.jpeg" alt="Praia 4" width="300">
+            <img src="foto3.jpeg" alt="Praia 3" width="300">
+            <img src="foto5.jpeg" alt="Praia 5" width="300">
+            <img src="foto6.jpeg" alt="Praia 6" width="300">
+            
+            
+            
+        </section>
+
+        <section id="dicas">
+            <span class="material-symbols-outlined icone">sunny</span>
+<span class="material-symbols-outlined icone">photo_camera</span>
+            <h2>Dicas para quem vai viajar</h2>
+            <p>Sempre leve protetor solar e repelente!</p>
+            <button id="curtir" onclick="curtirFoto()">curtir</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Mais informações: <a href="https://guiafloripa.com.br" target="_blank">Guia Floripa</a></p>
+        <p>Desenvolvido por: [Gabriel Conradi Antunes]</p>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
